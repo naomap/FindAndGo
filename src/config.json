@@ -1,0 +1,49 @@
+{
+    "distances": [500, 1000, 1500, 2000],
+    "dataTypes": [{
+            "key": "bakery",
+            "name": "Boulangerie",
+            "tag": "shop",
+            "value": "bakery",
+            "icon": "img/bakery.png",
+            "title": "{name}"
+        },
+        {
+            "key": "cinema",
+            "name": "Cinéma",
+            "tag": "amenity",
+            "value": "cinema",
+            "icon": "img/cinema.png",
+            "title": "{name}"
+        },
+        {
+            "key": "atm",
+            "name": "Distributeur de billets",
+            "tag": "amenity",
+            "value": "atm",
+            "icon": "img/atm_euro.png",
+            "title": "{operator}"
+        },
+        {
+            "key": "bicycle_parking",
+            "name": "Stationnement vélo",
+            "tag": "amenity",
+            "value": "bicycle_parking",
+            "icon": "img/bicycle_parking.png",
+            "title": "{capacity} places"
+        },
+        {
+            "key": "post_box",
+            "name": "Boîte aux lettres",
+            "tag": "amenity",
+            "value": "post_box",
+            "icon": "img/post_box.png"
+        },
+        {
+            "key": "craft",
+            "name": "Artisan",
+            "tag": "craft",
+            "icon": "img/craft.png",
+            "title": "{name}"
+        }]
+}

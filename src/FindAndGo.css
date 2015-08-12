@@ -1,0 +1,205 @@
+/* 
+    Created on : 31 juil. 2015, 16:57:52
+    Author     : antoine
+*/
+
+
+.FaG {
+    background-color: #FFFFF0;
+    border: 2px solid #777;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0 10px;
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #555;
+}
+.FaG-Btn {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    border-radius: 4px;
+}
+.FaG-Btn:hover {
+    background-color: #E5E0E0;
+}
+
+.FaG-Feedback {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+    font-weight: bold;
+    color: #803010;
+}
+
+.FaG h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.FaG h4 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.FaG-Disable {
+    color: #999;
+    cursor: default;
+    pointer-events: none;
+}
+
+.FaG-locate {
+    display: block;
+    height: 130px;
+}
+.FaG-locateAddress {
+    display: inline-block;
+    margin: 5px 0 3px;
+    width: 300px;
+    height: 26px;
+    padding: 2px 4px; 
+}
+
+.FaG-locateGeolocBtn {
+    display: inline-block;
+    background: url('img/locate.png') no-repeat center;
+    vertical-align: bottom;
+    margin: 3px 0 3px 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.FaG-coord {
+    margin: 5px 10px 5px 5px;
+    width: 80px;
+}
+
+.FaG-legendIcon {
+    width: 28px;
+    height: 24px;
+    float: left;
+    background-position: -2px -4px;
+}
+.FaG-legendIcon img {
+    background-size: cover;
+    margin: -8px -4px 12px 4px;
+}
+
+.FaG-find {
+    display: block;
+    height: 70px;
+}
+.FaG-find label {
+    display: inline-block;
+    width: 35%;
+    margin: 0 0 5px;
+}
+.FaG-find select {
+    display: inline-block;
+    width: 45%;
+}
+
+.FaG-searchBtn {
+    background: url('img/search.png') no-repeat center;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 20px;
+}
+
+.FaG-route {
+    display: block;
+    height: 150px;
+}
+#FaG-destIcon {
+    background: url('img/destination.png') no-repeat center;
+    width: 40px;
+    height: 35px;
+    float: left;
+    margin: 10px 15px 0 10px;
+}
+#FaG-destPOI {
+    float: left;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+#FaG-destAddress {
+    float: left;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+#FaG-walk {
+    background: url('img/walk.png') no-repeat;
+    background-color: rgba(165,42,42,0.6);
+    width: 36px;
+    height: 36px;
+    margin: 10px 10px 5px 10px;
+}
+#FaG-cycle {
+    background: url('img/cycle.png') no-repeat;
+    background-color: rgba(50,205,50,0.6);
+    width: 36px;
+    height: 36px;
+    margin: 10px 10px 5px;
+}
+#FaG-drive {
+    background: url('img/drive.png') no-repeat;
+    background-color: rgba(70,130,180,0.6);
+    width: 36px;
+    height: 36px;
+    margin: 10px 10px 5px;
+}
+
+
+/* Leaflet geometries can be styled using 'simplestyle' as documented in 
+ * https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
+ */
+.FaG-footRoute {
+    stroke: rgba(165,42,42,0.6);
+    stroke-width: 8;
+}
+.FaG-bikeRoute {
+    stroke: rgba(50,205,50,0.6);
+    stroke-width: 8;
+}
+.FaG-carRoute {
+    stroke: rgba(70,130,180,0.6);
+    stroke-width: 8;
+}
+
+/* Attributions */
+
+.Cartocite-logo {
+    float:left;
+    width: 100px;
+    margin-bottom: 8px;
+    border:1px solid #777;
+    border-radius:5px;
+    z-index:1;
+    background-color: white;
+}
+.Cartocite-logo img {
+    width: 100px;
+}
+
+.FaG-credits {
+    height: 70px;
+}
+.FaG-attribution {
+    float: left;
+    font: 12px Arial, Helvetica, sans-serif;
+    margin: 2px 0 5px 50px;
+    border-left: solid 2px #2F4F4F;
+    padding-left: 5px;
+}
+.FaG-attribution a {
+    color:#8B5015;
+    text-decoration:none;
+}
+.FaG-attribution a:hover {
+    text-decoration: underline;
+}

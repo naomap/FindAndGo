@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="FaG"> 
+    <h3>Recherche à proximité</h3>
+
+    <div id="FaG-step1">
+        <h4>Étape 1 : Définissez le lieu de recherche</h4>
+        <div class="FaG-locate">
+            Double-clic sur la carte, adresse ou géolocalisation :<br>
+            <input id="FaG-photon" class="FaG-locateAddress"/> 
+            <button id="FaG-locate" class="FaG-locateGeolocBtn FaG-Btn" title="Me géolocaliser"></button><br>
+            Vous pouvez saisir ou ajuster la position géographique :<br>
+            <label for="FaG-lat">Latitude  :</label>
+            <input id="FaG-lat" class="FaG-coord" name="lat" type="number" min="-85" max="85" step="0.00001">
+            <label for="FaG-lon">Longitude :</label>
+            <input id="FaG-lon" class="FaG-coord" name="lon" type="number" min="-180" max="180" step="0.00001">
+            <br><output id="FaG-address" class="FaG-Feedback"></output>
+        </div>
+    </div>
+
+    <div id="FaG-step2" class="FaG-Disable">
+        <h4>Étape 2 : Recherchez des POIs</h4>
+        <div class="FaG-find">
+            <button id="FaG-query" class="FaG-searchBtn FaG-Btn" title="Rechercher"></button>
+            <label>Vous recherchez :</label>
+            <select id="FaG-typeSelector" name="searchType"></select><br>
+            <label>dans un rayon de :</label>
+            <select id="FaG-distanceSelector"></select>
+            <div id="FaG-feedbackPOI" class="FaG-Feedback"></div>
+        </div>
+    </div>
+
+    <div id="FaG-step3" class="FaG-Disable">
+        <h4>Étape 3 : Calculez un itinéraire</h4>
+        <div class="FaG-route">
+            Sélectionnez un POI puis choisissez le mode de transport :<br>
+            <div>
+                <div id="FaG-destIcon"></div>
+                <div id='FaG-destPOI'></div><br>
+                <div id='FaG-destAddress'></div>
+                <div style="clear:both"></div>
+            </div>
+            <button id="FaG-walk" class="FaG-Btn" title="A pied"></button>
+            <button id="FaG-cycle" class="FaG-Btn" title="A vélo"></button>
+            <button id="FaG-drive" class="FaG-Btn" title="En voiture"></button>
+            <div id="FaG-feedbackRoute" class="FaG-Feedback"></div>
+        </div>
+    </div>
+
+    <div class="FaG-credits">
+        <div class="Cartocite-logo">
+            <a href="http://cartocite.fr" target="_blank"
+               title="Géomatique et cartographie Web">
+                <img src="img/logo-cartocite.png" alt="Carto'CITÉ">
+            </a>
+        </div>
+        <div class="FaG-attribution">
+            Gécodage : <a href="http://adresse.data.gouv.fr/" target="_blank">Base Adresse Nationale</a><br>
+            Recherche de POIs : <a href="http://overpass-api.de/" target="_blank">Overpass API</a><br>
+            Calcul d'itinéraires : <a href="https://graphhopper.com/" target="_blank">Graphhopper</a><br>
+            Icônes : <a href="http://mapicons.mapsmarker.com/" target="_blank">Map Icons Collection</a>
+        </div>
+    </div>
+</div>
