@@ -113,21 +113,25 @@
     display: block;
     height: 150px;
 }
+#FaG-destination {
+    display: flex;
+    flex-flow: row wrap;
+}
 #FaG-destIcon {
     background: url('img/destination.png') no-repeat center;
     width: 40px;
     height: 35px;
-    float: left;
     margin: 10px 15px 0 10px;
 }
+#FaG-destDesc {
+    flex-flow: column wrap;
+}
 #FaG-destPOI {
-    float: left;
     margin-top: 5px;
     white-space: nowrap;
     overflow-x: hidden;
 }
 #FaG-destAddress {
-    float: left;
     margin-top: 2px;
     white-space: nowrap;
     overflow-x: hidden;

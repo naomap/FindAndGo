@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <div class="FaG"> 
     <h3>Recherche à proximité</h3>
 
@@ -38,11 +33,12 @@ and open the template in the editor.
         <h4>Étape 3 : Calculez un itinéraire</h4>
         <div class="FaG-route">
             Sélectionnez un POI puis choisissez le mode de transport :<br>
-            <div>
+            <div id="FaG-destination">
                 <div id="FaG-destIcon"></div>
-                <div id='FaG-destPOI'></div><br>
-                <div id='FaG-destAddress'></div>
-                <div style="clear:both"></div>
+                <div id ="FaG-destDesc">
+                    <div id='FaG-destPOI'></div>
+                    <div id='FaG-destAddress'></div>
+                </div>
             </div>
             <button id="FaG-walk" class="FaG-Btn" title="A pied"></button>
             <button id="FaG-cycle" class="FaG-Btn" title="A vélo"></button>
